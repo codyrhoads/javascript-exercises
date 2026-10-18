@@ -7,23 +7,15 @@ const subtract = function(a, b) {
 };
 
 const sum = function(arr) {
-  return arr.reduce((total, curr) => {
-    total += curr;
-    return total;}, 0);
+  return arr.reduce((total, curr) => total + curr, 0);
 };
 
 const multiply = function(arr) {
-  return arr.reduce((total, curr) => {
-    total *= curr;
-    return total;}, 1);
+  return arr.reduce((total, curr) => total * curr, 1);
 };
 
 const power = function(base, pow) {
-  let total = 1;
-	for (let i = 0; i < pow; i++) {
-    total *= base;
-  }
-  return total;
+  return base ** pow;
 };
 
 const factorial = function(num) {
