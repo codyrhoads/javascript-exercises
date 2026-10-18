@@ -26,8 +26,12 @@ const power = function(base, pow) {
   return total;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+  let total = 1;
+	while (num > 0) {
+    total *= num--;
+  }
+  return total;
 };
 
 // Do not edit below this line
